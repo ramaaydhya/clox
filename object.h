@@ -18,6 +18,9 @@ typedef enum
 struct Obj
 {
   ObjType type;
+  // GC will trace every allocated obj in a linked list
+  // whose nodes are the Obj struct itself
+  struct Obj *next;
 };
 
 struct ObjString
