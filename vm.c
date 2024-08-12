@@ -38,7 +38,7 @@ void initVM()
 
 void freeVM()
 {
-  freeObjects()
+  freeObjects();
 }
 
 void push(Value value)
